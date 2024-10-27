@@ -1,0 +1,6 @@
+# luexp is software for hosting web apis on Roblox!
+# this is a api, and shouldnt be indexed. thanks for your understanding.
+# more info about luexp: https://github.com/czctus/luexp
+
+User-agent: *
+Disallow: *

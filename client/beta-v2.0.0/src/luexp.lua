@@ -32,7 +32,7 @@ local config = {
 	["host"] = "https://luexp.perox.dev",
 	["endpoint"] = "/luexp/%s/",
 	["hostVersion"] = "v2",
-	["clientVersion"] = "2.0.0",
+	["clientVersion"] = "beta-2.0.0",
 	["allowExternalOutput"] = "print,warn,error"
 }
 

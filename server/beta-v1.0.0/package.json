@@ -1,0 +1,19 @@
+{
+  "name": "luexp",
+  "version": "2.0.0",
+  "description": "API Backend for the Luexp Module for roblox",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "czc",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "bytes": "^3.1.2",
+    "chalk": "^5.3.0",
+    "express": "^5.0.1",
+    "uuid": "^11.0.0",
+    "ws": "^8.18.0"
+  }
+}

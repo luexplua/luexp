@@ -1,0 +1,10 @@
+{
+    "error": "UNKNOWN_ENDPOINT",
+    "message": "The requested endpoint isnt available.",
+    "logging": [
+        {
+            "type": "warn",
+            "message": "The requested endpoint isnt available."
+        }
+    ]
+}

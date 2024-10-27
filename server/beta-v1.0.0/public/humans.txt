@@ -1,0 +1,7 @@
+* humans.txt for luexp *
+
+luexp: Luau Express - allows hosting Express.js-like applications in Roblox.
+You can view the source at https://github.com/czctus/luexp :3
+
+Credits:
+- czctus, Creator (https://github.com/czctus)
