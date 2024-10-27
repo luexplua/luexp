@@ -1,0 +1,134 @@
+<roblox!‰ÿ
+
+                META$   "       ð      ExplicitAutoJoints   trueINST#   )       ð       ModuleScript   P  PROP)   ,       ð
+       AttributesSerialize  P     PROP#   5       ð       Capabilities!  P     PROP"           ð       DefinesCapabilities    PROP"   %       ð       LinkedSource  P     PROP2   0       ð       Name   luexp	 ðtypes   socket   libPROP¸   »       ñ.    
+   ScriptGuid&   {29255E51-3024-4B57-91D3-A32A1C6404E8}* ò3565F2AD-F6B4-41B4-8059-60E5A2A5C2D4* òAA042C01-DC1B-43F2-81ED-F452BC5F9BC2* ðDB2FC3FC-5DBF-46A6-BEFB-C6CBECD7ADD1}PROPŒ  »?      ð       SourceÄ  --!strict
+
+-- luexp	 ð an module for hosting web api's within roblox..3 ðTHIS TOOL IS BETA. IT ñ3NOT LICENSED FOR DISTRIBUTION OF ANY KIND, MODIFICAITON, OR PRODUC) 0USE¤ ó[[
+Copyright Â© 2024 czctus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this beta software and associated documentation files (the â€œS4 Aâ€)n @use   ]  apurpos "tel h aevalua{ & 7 , subjectT   `follow¢Pcondi‹ ðs:
+
+    No Produc w Use: TK ò shall not be used in6 Äenvironment.U €ModificaW S 4mayQ Palter{m/  
+ †or adaptj 5wayW ¯RedistribuY Psold,½ ^ “sublicensa rF g Ðform, whetherÞ‘ d or unŸ ˆ LL ` IncluM á 3is d A mus/i  db  ll60iesR ð substantial porÌ sz ­Æ b vi? !toö`ers.
+
+žPaboveO çRnotic{’pç Ç” . € °HE SOFTWARE¾úPROVIDED â€œAS ISâ€, WITHOUT WARRANTYÇpEXPRESSÁóIMPLIED, INCLUDING BUTÄMITED TO THEK 0IESM ðMERCHANTABILITY, FITNT  Añ,A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALLk aAUTHOR  ðCOPYRIGHT HOLDER»q LIABLE¬ œÀCLAIM, DAMAGž qR OTHER' ž 1WHE rIN AN A²õOF CONTRACT, TORT;  WISE, ARIS`FROM, O OF#  IN8 "NEF  k¶ –!OR !US Œ €DEALINGSò  N- @.
+]]7! sôÔ: github.com/6ñlocal types = require(script. )$ nsocket%  & >lib# Dlib)k €httpServÕ£= game:Get 6('H 'T 3run  2 R 'e ð	config = {
+	["host"] = "} As://ìÀ.perox.dev",' sendpoin+ $ B/%s/  E 0VerL "v2 Zclien R2.0.0 ažÓExternalOutpu` õprint,warn,error"
+}#Peader¿ 0X-L›-c á .| A ß  þ S 2funÂgetApp(...):÷.. RApp
+	é#ap<  $Id Arout+q{} :: {#. 1 $ws. amethodÊ À"GET", "HEAD 1POS !PU `DELETE  OPóS  ? „PATCH"}
+X Ï óparseIncoming(data)
+	¸ õfinished = false •index = 1 `req = ? . :7req$  È $ sý ü %es$ im # …questId
+ prespons÷Ð{
+			inputTyp €"RESPOND5$		* @Data‹  `	statuƒ A200, (} } = IŒ Pid
+		8‚canSendHC (6T	if (5`) thenV 	ŸP("Can+5set¡Pafter)  y 	5sen—šA", 2[  en‰   5
+		¾Ñres.json(body( 
+—  ‚  ' Ðset("content-y  Capplˆ/H "D / #ndV  B Ö p = true”a	retur„ š ,		œ  Lrect(url[ 
+Ÿ 	5 ±.ÔpDIRECT"ƒ — 0 Ý.ù ` = url$   « b ® ¬ ò ©  [ ƒ 
+ Š   a"ofAÇ == "buffer"M / `.tostr™ ] ˜ 
+æ Ÿ ã 
+Q(codeM 
+ŽF f
+h= = ç n `et(fiel
+ ‹s ^ ‰[/  i1 g æ £ ir q° :s8 Šòreqm = setmetatable({},$__È1reqúT__new e²(_:any, key	 œ   D†	req[key¶  ò ndQ (})æ(qm™ s™ sH ™ • ‘  s s `repeatö0  E  !s[] F   * 2 =  0+ 1ë  óÞ
+ûŒ5404º ƒ `l­#: /{Û}
+ ÒoriginalUrl}`= Pbreakˆ !--t B.ext\s0liby þ rtsWithMulti(`/V , Ñ ((ˆ {  Ö1`/{Ü,}{n g}`) orþ Š !))Œ Q Ù  L B  "or… :  w== nil)K¸¬R nextŒ!		R ®¹  %ÓÔs, r = pcall(J 	E . @back´ 0m, ?,l 2end	  ƒös§ 	¨	!(`
+ed while V x^ D\n{rÒ K]s±rtus(500e  -+²debug.tracež )"  á  †´
+ (  ³  á ¨U ,  	CÏ ü ;  C f		unti0	 üwQ­ )
+&
+
+¼âapp.listen(id:è%?,
+ : 5":  @) ->Z?á  Æ  · 1
+		\	iY B rrandomS`5X Ì Å Ó Yué3 `{Y bhost}{“ .3at( ý#,   , r•)}server`X  
+=‡ dfetch(Î
+ `{url}/{id…Dnil,,	 ¡  Å « gSuccesg_b(`failì } .>0s.E,Q or ` S]ACode^ Message}`‡ ‚	éÁ Ÿ	 \Ö
+Q:newCÈ ÿ  Ð  T bBody.mS B.webò
+¡}?authoriz	= 	+     2
+		p P:on("%",Š
+µ	 0 = ¤
+ï
+p:JSONDe´'  ´ï 0  ¯h)ˆ
+±
+
+ß 3 '  * ¨ @connø	 ¶wëÀ   ~  ú ²t  (0;
+€ò»BindToClose³¸3newš ¤ °  8["A~“
+|   7   Aws:cp  Ô Ð" dÛÓ@×–
+Ù Œ 	R reaned..K 
+`C	DDuse(>S
+ ÀCW ^ û.insert(Ös	;  >1 s ex«
+}z  
+	Ð3_, Ži?Birs( Rs) doG[#Slower )"	_„ ö	õ5reqÆ m:û 1Qxt: (5nil  žá â ã  ? $ ªš "		Ù # =ò *  !	}í
+ o Å¥  
+ Aapp
+ Ê‹
+ __£  f]^T ƒn ,C z	=†w
+M	HTbl
+Œ
+ ŸMetaTblÈ9)aexport3£RÎ ["ú!"]ë?OÁ   ï[¾]= ,  ò length"]:number Ž]M0
+	} &["ý e 2    C 7 x  rboolean [  -  Pö w÷ ´ 5 Snil |ï 1    — plogging  {go  —µ L}
+	}ƒ i
+ t` -- owV #x-m0ed-œ _ Ã ˆ °x-forwarded
+   ô ]proto  }real-ip }api-key J2 Ýframe-options8 Àua-compatibl?kÍx-csrf-token9 x   6 k” P
+r Ÿwap-profi©  d`­ ò device-user-age" 	Â" oTapp-v—6   @platê	 W /id SlanguÂ	Ž  X 
+= É  ; ŽsignaturÆ0ses`‘ T   DÄO  0ent
+rÆ   ¾
+6 5oreferrh  1regÁe0 / "al+uN-namb0clum†kaccept  -charse SencodÜ-;  €Au Qcache‡<rol Ÿ
+7 /  !Gi ¸ \cooki. 4if-/\-sinc3 Àif-none-matcÆ¥-kpragmaß oproxy-	Œsec-ch-uP  N-mob•  Ç
+=-de mhÞ <sit  ¼ã 
+. €upgrade-ä
+DcureÔòÅ L %,vi÷  ´’  ±-?
+– Ú ¶²3{
+	‡:›†,
+	baseUñ  4ody.b? | {[Ç &i $ |‰# |±âUfresh¥0,
+	’S  nO
+g)ip
+ 3s: ï ! “‹ Hpath  ÷7col d×°§ Jstal Šubdomain 8xhr& *  
+w Ø{X Qtus: Gi €!: ¶­ y@any} Ø?E EjsonE ´ ; 0 $ñ –  öDfiel'ó	L qq÷	 } »– é  D›| €	  ,
+%
+)÷ Aˆ ˆ : ±
+ 
+{ +â  çv  ,
+@ˆ ¬ ¨ 1	["è‚  ¾§ 8 À/ =› 	uš pMiddlewe N  ÿ ” ~	x X{,}U 	O  ¾ Î@ Jnil?ß0Tbl
+V  A="
+	 : “?¬ t },
+	get:ÿ A,
+	p u1 @dele03  | pÂ ¡ Guse:^È"¹ÐÎP::{
+
+å
+ ^ : UB #I 6App;::+)°O{}Ò!Tº  ¯ aJ#[ParenQ#+#) 2#&­#" QinitS÷(÷Pp	Ž,ñ)
+ )p!ƒðB `}/new?¤ ={  û	ña40@ ¸
+@ ;  ‘ ¼ "}/
+ 2s/{	 TId}`
+A£WPcreatH( Ñ$X. ò  c
+--ev & fi"on  ‰ $ws 2ion&  j	?  ‚received! ¢ "  $
+
+m¤!H¶h·â #8 1 `æö B+9a,U£ ´ Â !Poó a Peventú~{á!["  XlD" | ¿  N  ÷ "» þ” ; úÐ 	}Ò"w % `E„ (t N
+ ï$!
+	 6i,vú+ ù¬!v. A == 	  H ³6		vLT Õ  4	š pthrowOro#œ   …Ô?ùå 0ounÎ#Ç$È / co,–ine.wrap(× )i í w zß ê , c$ !Ä(É  F 4   ;h g!é r 	K] ,
+  Ù h>	% =U  0%1ÒÓF}ion.dea
+"'c6%D0 a $ Q !'® j a	g'3Q U § 3"$  ""Í5'¢ d” “ Y; : (¹  ý    c("thisñ  —/°already runo/( ˜ ÷¿ î
+ DD
+ âÂ œ 2
+		2 U  >  ^ ³ "  h ( ý s‘ 	P=*§"èà(è AUrl,dEaež |@), {¸ð v' þ	b = ¦ 
+Ç(~¡ ?   
+¡™ ³ g#±i e . \  tv´J	¸’Š ú ç ™ u#îjrgot 404y Üš³  ù'­  ì  	¥"Æ ",á , `unhand“ ex ë$é u ƒ Ñtask.wait(0.1  Ž!my!)( ì'' 4ed'>IÍ" c Äz"3atag š$	8 ´ *Ÿn   7 u gs}HÂ; ‡Î : Ž/é
+Ö{À ¯.
+á.4  ” d # ?X{"Qparse.• Å~#
+ )ü	ü X‘ž Ó€  :m!(v0"
+  ‘"ìR" or !  E ö.&")¿¢getfenv()[; 4](vk" 
+ úr 	  ¦ #	'#(sÌ3, q
+ )Y
+«Às:sub(1, #q)ž q‚ WÈs% Þ @deas B<T>(>A T, õ xb?): T
+G-  … Dor "Q L6$"!"½  gd 9£ z  /5any¿ … ( p $ D  
+H	I%9:ª,.7 À_?Yts' åª2! óó1"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"°B=1, “ œ!n l…s = mathÃ ßs‹2)  ‘ @+ÿ8 %,   - Î   !..ó +° 2str!	~œ%ˆ)„t† ´_|qÍ oJ  (s
+› œˆ ý ÒÍ·"…,d.È), œ¤& ð" Ý}½ ^ s.Øõ ø P1Mé*ŠI F.uppC# t*!! =†  ,!ï$ F"{} 1Url '/7}
+	
+
+‹– .H	{õ3:/0 Â Vs:"})G+  " " G://{ I ¾0u  4of(& ¾ Y"Gâ%  + ƒ# 2#("IA wasDtto {};  m8!a V .Ü ï[  {"”+)   š ’›   #  ›+™  !– removed;­þ8a<ing’ 	 jø3D or ®  4Nr  z
+À   	¸ â # ^ >= 1ÄÇ áshould be empt:` 'get'¨ '~'zá }
+ÙŽ,? ã
+ hÝRÂ(TAsync@í$ + wy »u [^ H/"]  
+Ù8`	_ ] Ž ¹ )"  N¡  -¦ Ò B)Cö*	ô*ddue toz "!ñ Q¾$ q&@alse#¾$— ï Ïƒ ‰è5 × e™ Ö D 4	!5 ƒŒ	1  £  £}  ?  °
+return libPROP$   6       ð    
+   SourceAssetId  P PROP          Ð       Tags
+  P     PRNT   %       :   G P    END     	       </roblox>
