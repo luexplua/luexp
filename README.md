@@ -54,6 +54,8 @@ In contrast, when evaluating the performance with larger data payloads of **5 MB
 
 ![image](https://github.com/user-attachments/assets/0976d358-8ff8-458d-b0df-b55d81245da1)
 
+Our performance benchmarks revealed significant improvements in Luexp v2's scalability compared to v1. While v2 can handle high volumes of concurrent requests, extremely rapid request rates can lead to issues like HTTP 502 errors.  In contrast, Luexp v1 cannot handle high volumes of requests at all and will throw timeout errors. Once this stage is reached, v1 will stop responding to any further requests until it's restarted.  This difference in behavior, discovered during our benchmarking, highlights the greater scalability and stability of Luexp v2 for projects requiring high request handling.
+
 ---
 
 ### Key Observations
