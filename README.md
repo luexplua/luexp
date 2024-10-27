@@ -17,11 +17,11 @@ Here’s a quick example to set up your first Luexp application:
 local luexp = require(path.to.luexp)
 local app = luexp()
 
-app:get("/", function(req, res)
+app.get("/", function(req, res)
     res:send("Hello!")
 end)
 
-app:listen("example", function(url)
+app.listen("example", function(url)
     print(`App listening on {url}!`)
 end)
 ```
@@ -40,6 +40,7 @@ Luexp brings a familiar Express.js-like syntax to Roblox, simplifying API creati
 - **Roblox-friendly**: Designed specifically for use in Roblox games and projects.
 - **Minimalistic & Free**: Lightweight and free to use with no hidden costs.
 - **Cross-Compatible**: Works seamlessly with Luexp v1.x projects.
+- **Extremely fast**: Luexp is now significantly faster--averaging 6x speed over v1.
 
 ## Contributing
 Contributions are always welcome! If you have a bug fix, feature suggestion, or improvement, feel free to submit a pull request or open an issue. Every contribution helps make Luexp better for everyone.
