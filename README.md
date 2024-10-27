@@ -18,7 +18,7 @@ local luexp = require(path.to.luexp)
 local app = luexp()
 
 app.get("/", function(req, res)
-    res:send("Hello!")
+    res.send("Hello!")
 end)
 
 app.listen("example", function(url)
