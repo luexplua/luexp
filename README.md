@@ -6,6 +6,7 @@ Luexp is a web framework for Roblox LuaU, inspired by [Express.js](https://githu
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Features](#features)
+- [Performance](#Performance)
 - [Contributing](#contributing)
 - [Contact](#contact)
 - [License](#license)
@@ -40,14 +41,25 @@ Luexp brings a familiar Express.js-like syntax to Roblox, simplifying API creati
 - **Roblox-friendly**: Designed specifically for use in Roblox games and projects.
 - **Minimalistic & Free**: Lightweight and free to use with no hidden costs.
 - **Cross-Compatible**: Works seamlessly with Luexp v1.x projects.
-### **Highly improved speed**
-We benchmarked both versions, with the same exact setup.
-We sent one thousand requests to each in 100 concurrency.
 
-Our results said that v2 is roughly 96.23% faster compared to v1: 
+## Performance
 
-![image](https://github.com/user-attachments/assets/c9348244-e16a-4f17-a6d4-9c4d7e260631)
+We conducted a series of performance benchmarks on both versions of the API under identical conditions, utilizing the same environment for all tests. Each API was subjected to a workload of **1,000 requests** with a concurrency level set to **100**.
 
+The results demonstrated that **v2** exhibits an average response time improvement of approximately **96.23%** compared to **v1**. This substantial enhancement highlights the efficiency of the new implementation in handling high-frequency requests:
+
+![image](https://github.com/user-attachments/assets/1e6b413d-ab1d-4090-8f9d-847fd3ef262c)
+
+In contrast, when evaluating the performance with larger data payloads of **5 MB** across **10 requests**, our findings indicated that **v2** performed **37.48% slower** than **v1** in terms of average response time. This discrepancy suggests that while the new API excels in handling a higher volume of smaller requests, it may encounter challenges with larger data transmissions:
+
+![image](https://github.com/user-attachments/assets/0976d358-8ff8-458d-b0df-b55d81245da1)
+
+---
+
+### Key Observations
+- All benchmarks were executed in a controlled environment to ensure comparability, focusing solely on the variations introduced by the different API versions.
+
+---
 
 ## Contributing
 Contributions are always welcome! If you have a bug fix, feature suggestion, or improvement, feel free to submit a pull request or open an issue. Every contribution helps make Luexp better for everyone.
