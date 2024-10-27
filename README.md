@@ -40,7 +40,14 @@ Luexp brings a familiar Express.js-like syntax to Roblox, simplifying API creati
 - **Roblox-friendly**: Designed specifically for use in Roblox games and projects.
 - **Minimalistic & Free**: Lightweight and free to use with no hidden costs.
 - **Cross-Compatible**: Works seamlessly with Luexp v1.x projects.
-- **Extremely fast**: Luexp is now significantly faster--averaging 6x speed over v1.
+### **Highly improved speed**
+We benchmarked both versions, with the same exact setup.
+We sent one thousand requests to each in 100 concurrency.
+
+Our results said that v2 is roughly 96.23% faster compared to v1: 
+
+![image](https://github.com/user-attachments/assets/c9348244-e16a-4f17-a6d4-9c4d7e260631)
+
 
 ## Contributing
 Contributions are always welcome! If you have a bug fix, feature suggestion, or improvement, feel free to submit a pull request or open an issue. Every contribution helps make Luexp better for everyone.
