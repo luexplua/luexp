@@ -41,7 +41,7 @@ end)
 
 app.disable("x-powered-by")
 
-app.listen(`test-{luexpLib.randomString(5)}`, function(url)
+app.listen(function(url)
 	print(`Server listening on {url}!`)
 	
 	task.wait(0.5)
